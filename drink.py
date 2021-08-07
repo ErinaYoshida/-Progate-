@@ -16,4 +16,7 @@ class Drink(Menu_Item):
         return self.name + ": " + str(self.price) + "円(" + self.alcohol + ")"
     #引数に追加でname, price, alcoholを指定するとscript.pyでエラー。
     #selfだけならOKだが上記でNGな理由不明
+    #⇒(追記)引数としてはinfoに必要ない。
+    #__init__で引数として渡して、インスタンスの各引数がインスタンス変数として定義済み。
+    #そのインスタンス変数を使えば良いため引数としては不必要。
     
